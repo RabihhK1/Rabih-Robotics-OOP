@@ -1,0 +1,11 @@
+
+version: '3'
+
+services:
+  virtual_robot_simulator:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      PYTHONPATH: /app/src
+    command: python main.py
